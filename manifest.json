@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Bookmarks nanny",
+  "version": "0.1",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "background": {
+    "service_worker": "background/main.js",
+    "type": "module"
+  },
+  "permissions": [
+    "bookmarks"
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ]
+}
